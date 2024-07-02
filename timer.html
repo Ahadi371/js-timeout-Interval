@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div id="container"></div>
+    <button id="btnMove">Move 100px to Right</button>
+    <button id="btnStop" onclick="stopMovement()">Stop</button>
+
+    <script src="./moveableBlock.js" type="text/javascript"></script>
+    <script>
+       Pondit.target('container').setMoveableBlock(); 
+
+
+    const btnMove = document.getElementById('btnMove');
+    btnMove.addEventListener('click', Pondit.move, false);
+    </script>
+</body>
+
+</html>
